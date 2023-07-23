@@ -1,0 +1,17 @@
+@media (min-width: 375px) {
+
+    /*HEADER*/
+    .header-div {
+        .usuario-carrito {
+            width: 4.375rem;
+            display: flex;
+            img{
+                width: 2rem;
+                height: 2rem;
+                &:nth-child(1) {
+                    display: block;
+                }
+            }
+        }
+    }
+}

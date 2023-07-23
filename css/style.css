@@ -30,7 +30,7 @@ header {
 }
 
 .header-div {
-  width: 90%;
+  width: 100%;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-areas: "h1 icono" "search search";
@@ -49,6 +49,7 @@ header {
   height: 2.25rem;
   font-size: 1rem;
   font-family: "venecia";
+  padding: 0.625rem;
 }
 .header-div .search img {
   width: 1.25rem;
@@ -213,6 +214,21 @@ footer div ul li a img {
 }
 footer div img {
   margin-right: 0.625rem;
+}
+
+@media (min-width: 375px) {
+  /*HEADER*/
+  .header-div .usuario-carrito {
+    width: 4.375rem;
+    display: flex;
+  }
+  .header-div .usuario-carrito img {
+    width: 2rem;
+    height: 2rem;
+  }
+  .header-div .usuario-carrito img:nth-child(1) {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
