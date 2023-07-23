@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-div">
+            <div class="search">
+                <form action="">
+                    <label for=""></label>
+                    <input type="search" id="" placeholder="¿Qué estás buscando?">
+                </form>
+                <img src="../asset/img/buscar.png" alt="">
+            </div>
+            <h1>Venecia</h1>
+            <div class="usuario-carrito">
+                <img src="../asset/img/usuario (1).png" alt="">
+                <img src="../asset/img/carrito-de-compras.png" alt="">
+            </div>
+        </div>
+        <nav class="header-nav">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="menu-icon"><img src="../asset/img/menu.png" alt=""></i>
+            </label>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="como-comprar.html">Cómo comprar</a></li>
+                <li><a href="gift-card.html">Gift Card</a></li>
+            </ul>
+        </nav>
+    </header>    
+    <main>
+        <div class="container">
+            <div class="div-inicio">
+                <p>Inicio ></p>
+                <p>Productos</p>
+            </div>
+            <div class="cat-linea">
+                <div></div>
+                <h2>PRODUCTOS</h2>
+                <div></div>
+            </div>
+            <div class="fil-ord">
+                <div class="ordenar-por">
+                    <p>Ordernar por:</p>
+                    <form action="">
+                        <select>
+                            <option value="p:men-ma">Precio:Menor a mayor</option>
+                            <option value="p:ma-me">Precio:Mayor a menor</option>
+                            <option value="a-z">A-Z</option>
+                            <option value="z-a">Z-A</option>
+                            <option value="mas-nuev-viejo" selected>Más Nuevo al más Viejo</option>
+                            <option value="mas-viejo-nuev">Más Viejo al mas Nuevo</option>
+                            <option value="mas-vendidos">Más vendidos</option>
+                        </select>
+                    </form>
+                </div>
+                <form action="" class="filtrar-prod">
+                    <select>
+                        <option disabled="Filtrar" selected>Filtrar</option>
+                        <option value="p:men-ma">CATEGORÍAS</option>
+                        <option value="p:ma-me">TALLE</option>
+                        <option value="a-z">PRECIO</option>
+                    </select>
+                </form>
+            </div>
+            </div>
+            
+        </div>
+        <section class="section-productos">
+            <div class="filtros">
+                <div class="filtros-categorias">
+                    <h3>CATEGORÍAS</h3>
+                    <ul>
+                        <li>Camperas y buzos</li>
+                        <li>Sewaters</li>
+                        <li>Remeras</li>
+                        <li>Pantalones</li>
+                    </ul>
+                </div>
+                <div class="filtros-talle">
+                    <h3>TALLE</h3>
+                    <form action="" class="form-talle">
+                        <div>
+                            <input type="checkbox" name="talle" id="s">
+                            <label for="s"> S</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="talle" id="m">
+                            <label for="m"> M</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="talle" id="l">
+                            <label for="l"> L</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="talle" id="xl">
+                            <label for="xl"> Xl</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="talle" id="xxl">
+                            <label for="xxl"> Xxl</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="filtros-precio">
+                    <h3>PRECIO</h3>
+                    <form action="" class="form-precio">
+                        <div>
+                            <label for="desde">Desde</label>
+                            <input type="number" name="desde">
+                        </div>
+                        <div>
+                            <label for="hasta">Hasta</label>
+                            <input type="number" name="hasta">
+                        </div>
+                        <div>
+                            <button type="submit" class="button-submit"></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="productos">
+                <div class="cards">
+                    <img src="../asset/img/faith-yarn-jX2cntCbrAo-unsplash.jpg" alt="">
+                    <div>
+                        <p>Remera básica negra</p>
+                        <p><strong>$5.660</strong></p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="../asset/img/kai-gabriel-2s3GhhJz2uY-unsplash.jpg" alt="">
+                    <div>
+                        <p>Pantalón Wide Leg</p>
+                        <p><strong>$10.538</strong></p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="../asset/img/pexels-danik-prihodko-15963563.jpg" alt="">
+                    <div>
+                        <p>Campera doble color</p>
+                        <p><strong>$15.899</strong></p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="../asset/img/pexels-yonatan-gonzalez-9232016-min.jpg" alt="">
+                    <div>
+                        <p>Campera jean mom</p>
+                        <p><strong>$10.790</strong></p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="../asset/img/pexels-darina-belonogova-7897414.jpg" alt="">
+                    <div>
+                        <p>Pantalón Wide Leg naranja</p>
+                        <p><strong>$13.670</strong></p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="../asset/img/pexels-dima-valkov-6503007.jpg" alt="">
+                    <div>
+                        <p>Pantalón cargo</p>
+                        <p><strong>$12.899</strong></p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="../asset/img/pexels-andrea-musto-13522295.jpg" alt="">
+                    <div>
+                        <p>Musculosa básica negra</p>
+                        <p><strong>$4.500</strong></p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="../asset/img/rocknwool-8Lsy75LqGVc-unsplash.jpg" alt="">
+                    <div>
+                        <p>Sweater liviano</p>
+                        <p><strong>$10.699</strong></p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="../asset/img/pexels-vitaly-gorbachev-14436111.jpg" alt="">
+                    <div>
+                        <p>Sweater oversize</p>
+                        <p><strong>$12.999</strong></p>
+                    </div>
+                </div>
+                <input type="button" value="MOSTRAR MÁS PRODUCTOS">
+        </section>
+    </main>
+    <footer>
+        <div class="footer-div">
+            <h3>CATEGORÍAS</h3>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="como-comprar.html">Cómo comprar</a></li>
+                <li><a href="gift-card.html">Gift Card</a></li>
+            </ul>
+        </div>
+        <div class="footer-div">
+            <h3>CONTÁCTANOS</h3>
+            <ul>
+                <li><a href=><img src="../asset/img/correo-electronico.png" alt="">venecia.clothes@gmail.com</a></li>
+                <li><a href="https://api.whatsapp.com/send/?phone=5493813348333"><img src="../asset/img/whatsapp.png" alt="">+54 9 3813348333</a></li>
+                <li><a href="https://maps.app.goo.gl/8tq4q85JycDmA44f7"><img src="../asset/img/ubicacion.png" alt="">Ing. La Florida - Calle Ortiz 345</a></li>
+            </ul>
+        </div>
+        <div class="footer-div">
+            <h3>REDES SOCIALES</h3>
+            <img src="../asset/img/facebook.png" alt="">
+            <img src="../asset/img/instagram.png" alt="">
+        </div>
+    </footer>
+</body>
+</html>
