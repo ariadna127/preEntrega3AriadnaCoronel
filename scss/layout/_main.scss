@@ -1,0 +1,30 @@
+.container {
+    @include flex(column, nowrap, center, center);
+    gap: .9375rem;
+    margin: 15px 0;
+
+    .div-inicio {
+        display: flex;
+
+        p:nth-child(1) {
+            color: gray;
+        }
+    }
+
+    .cat-linea {
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        width: 100%;
+
+        div {
+            border-top: .0625rem solid grey;
+            margin-top: .9375rem;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 1.875rem;
+            font-weight: 600;
+        }
+    }
+}

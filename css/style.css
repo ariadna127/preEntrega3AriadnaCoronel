@@ -184,6 +184,100 @@ header {
   background-position: center;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9375rem;
+  margin: 15px 0;
+}
+.container .div-inicio {
+  display: flex;
+}
+.container .div-inicio p:nth-child(1) {
+  color: gray;
+}
+.container .cat-linea {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  width: 100%;
+}
+.container .cat-linea div {
+  border-top: 0.0625rem solid grey;
+  margin-top: 0.9375rem;
+}
+.container .cat-linea h2 {
+  text-align: center;
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+
+.fil-ord {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  justify-content: center;
+  align-items: center;
+}
+.fil-ord div p {
+  display: none;
+}
+.fil-ord div form select {
+  width: 16.25rem;
+  height: 2.5rem;
+  font-family: "abz";
+  font-size: 1rem;
+  border-color: black;
+  border-radius: 0.3125rem;
+}
+.fil-ord form select {
+  width: 6.5625rem;
+  height: 2.5rem;
+  font-family: "abz";
+  font-size: 1rem;
+  border-color: black;
+  border-radius: 0.3125rem;
+}
+
+.filtros {
+  display: none;
+}
+
+.productos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  padding-bottom: 3rem;
+}
+.productos div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.productos div img {
+  width: 80%;
+  display: flex;
+}
+.productos div div {
+  background-color: #d9d9d9;
+  height: 4.375rem;
+  width: 80%;
+  padding-top: 0.9375rem;
+}
+.productos div div p {
+  padding-bottom: 0.3125rem;
+}
+.productos input {
+  width: 80%;
+  align-self: center;
+  background-color: black;
+  color: white;
+  height: 2.8125rem;
+  border-radius: 0.625rem;
+}
+
 footer {
   background-color: black;
   color: white;
