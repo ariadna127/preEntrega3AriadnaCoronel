@@ -256,18 +256,25 @@ header {
   flex-direction: column;
   align-items: center;
 }
+.productos div:nth-child(9) {
+  display: none;
+}
 .productos div img {
   width: 80%;
   display: flex;
 }
 .productos div div {
-  background-color: #d9d9d9;
   height: 4.375rem;
+  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  justify-content: center;
+  align-items: center;
   width: 80%;
-  padding-top: 0.9375rem;
 }
 .productos div div p {
-  padding-bottom: 0.3125rem;
+  text-align: center;
 }
 .productos input {
   width: 80%;
@@ -326,6 +333,28 @@ footer div img {
   .section-1 div img {
     width: 9.375rem;
     height: 12.5rem;
+  }
+  /*main PRODUCTOS*/
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    column-gap: 0.9375rem;
+    justify-content: center;
+  }
+  .productos div img {
+    width: 100%;
+    height: 17.5rem;
+  }
+  .productos div div {
+    width: 100%;
+  }
+  .productos div div p {
+    font-size: 15px;
+  }
+  .productos input {
+    grid-column: 1/3;
+    justify-self: center;
+    width: 60%;
   }
 }
 @media (min-width: 480px) {

@@ -49,6 +49,10 @@
         flex-direction: column;
         align-items: center;
 
+        &:nth-child(9) {
+            display: none;
+        }
+
         img {
             width: 80%;
             display: flex;
@@ -56,13 +60,17 @@
         }
 
         div {
-            background-color: #d9d9d9;
             height: 4.375rem;
+            background-color: #d9d9d9;
+            display: flex;
+            flex-direction: column;
+            gap: .25rem;
+            justify-content: center;
+            align-items: center;
             width: 80%;
-            padding-top: .9375rem;
 
             p {
-                padding-bottom: .3125rem;
+                text-align: center;
             }
         }
     }
