@@ -334,7 +334,7 @@ footer div img {
   /*main INDEX*/
   .section-1 div img {
     width: 12.8125rem;
-    height: 16.25rem;
+    height: 16.875rem;
   }
   .section-1 div img:nth-child(3) {
     display: block;
@@ -357,6 +357,77 @@ footer div img {
     justify-content: space-around;
     height: 14.375rem;
     padding-top: 1.25rem;
+  }
+}
+@media (min-width: 1024px) {
+  /*HEADER*/
+  .header-div .search {
+    width: 16.25rem;
+    height: 3.125rem;
+  }
+  .header-div .search form input {
+    width: 16.25rem;
+    height: 2.5rem;
+  }
+  .header-div .search img {
+    left: 95%;
+    top: 20%;
+  }
+  .header-div h1 {
+    width: 16.25rem;
+  }
+  .header-div .usuario-carrito {
+    width: 16.25rem;
+  }
+  /*main INICIO*/
+  .section-1 {
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+  }
+  .section-1 h2 {
+    width: 15rem;
+    font-size: 2.25rem;
+  }
+  .section-1 h2 br {
+    display: block;
+  }
+  .section-1 div {
+    justify-content: center;
+    align-items: center;
+  }
+  .section-1 div img {
+    width: 13.8125rem;
+    height: 17.875rem;
+  }
+  .section-2 {
+    height: 25rem;
+  }
+  .section-2 div {
+    height: 20rem;
+  }
+}
+@media (min-width: 1320px) {
+  .section-1 h2 {
+    font-size: 2.8125rem;
+    margin-left: 1.25rem;
+  }
+  .section-1 div {
+    margin-left: 3.125rem;
+    gap: 3.125rem;
+  }
+  .section-1 div img {
+    width: 16.875rem;
+    height: 23.125rem;
+  }
+  .section-2 {
+    height: 32.125rem;
+  }
+  .section-2 div {
+    height: 23.75rem;
+  }
+  .section-2 div p {
+    font-size: 1.875rem;
   }
 }
 
