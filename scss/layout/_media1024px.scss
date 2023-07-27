@@ -1,52 +1,80 @@
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
+
     /*HEADER*/
-    .header-div{
-        .search{
+    .header-div {
+        .search {
             width: 16.25rem;
             height: 3.125rem;
-            form{
-                input{
+
+            form {
+                input {
                     width: 16.25rem;
                     height: 2.5rem;
                 }
             }
-            img{
+
+            img {
                 left: 95%;
                 top: 20%;
             }
         }
-        h1{
+
+        h1 {
             width: 16.25rem;
         }
-        .usuario-carrito{
+
+        .usuario-carrito {
             width: 16.25rem;
         }
     }
+
     /*main INICIO*/
-    .section-1{
+    .section-1 {
         flex-direction: row;
         align-items: center;
         gap: 0;
-        h2{
+
+        h2 {
             width: 15rem;
             font-size: 2.25rem;
-            br{
+
+            br {
                 display: block;
             }
         }
-        div{
+
+        div {
             justify-content: center;
             align-items: center;
-            img{
+
+            img {
                 width: 13.8125rem;
                 height: 17.875rem;
             }
         }
     }
-    .section-2{
+
+    .section-2 {
         height: 25rem;
-        div{
+
+        div {
             height: 20rem;
+        }
+    }
+
+    /*main PRODUCTOS*/
+    .section-productos {
+        grid-template-columns: 18% 82%;
+    }
+
+    .productos {
+        grid-template-columns: repeat(3, 14.5rem);
+        margin-left: 4.375rem;
+        column-gap: 2.1875rem;
+        div {
+            img {
+                height: 21.875rem;
+            }
         }
     }
 }

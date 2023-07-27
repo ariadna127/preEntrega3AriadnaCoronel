@@ -60,6 +60,7 @@
         margin-bottom: 1.25rem;
     }
     .productos{
+        grid-template-columns: repeat(2, 14.375rem);
         div{
             img{
                 height: 21.875rem;

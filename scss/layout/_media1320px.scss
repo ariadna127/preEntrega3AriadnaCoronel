@@ -1,4 +1,5 @@
 @media (min-width: 1320px) {
+    /*main INICIO*/
     .section-1 {
         h2{
             font-size: 2.8125rem;
@@ -19,6 +20,17 @@
             height: 23.75rem;
             p{
                 font-size: 1.875rem;
+            }
+        }
+    }
+    /*main PRODUCTOS*/
+    .productos{
+        grid-template-columns: repeat(3, 17.5rem);
+        column-gap: 2.5rem;
+        row-gap: 3.25rem;
+        div{
+            img{
+                height: 25rem;
             }
         }
     }
