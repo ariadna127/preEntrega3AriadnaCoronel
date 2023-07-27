@@ -1,0 +1,118 @@
+@media (min-width: 600px) {
+
+    /*main PRODUCTOS*/
+    .fil-ord {
+        div {
+            display: flex;
+            gap: .625rem;
+
+            p {
+                display: block;
+                align-self: center;
+            }
+        }
+
+        .filtrar-prod {
+            display: none;
+        }
+    }
+
+    .section-productos {
+        display: grid;
+        grid-template-columns: 25% 75%;
+
+    }
+
+    .filtros {
+        display: flex;
+        flex-direction: column;
+        gap: 3.75rem;
+        margin-left: 1.5625rem;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: .625rem;
+
+            ul {
+                list-style: none;
+                opacity: 0.8;
+
+                li {
+                    padding-bottom: .625rem;
+                }
+            }
+
+            &:nth-child(2) {
+                form {
+                    div {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        gap: .3125rem;
+                        padding-bottom: .625rem;
+
+                        input {
+                            appearance: none;
+                            width: 1.25rem;
+                            height: 1.25rem;
+                            border: 0.0625rem solid black;
+                            border-radius: 20%;
+                        }
+
+                        label {
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                form {
+                    display: flex;
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        gap: .625rem;
+
+                        label {
+                            opacity: 0.8;
+                        }
+
+                        input {
+                            appearance: none;
+                            width: 85%;
+                            height: 1.875rem;
+                            border: 0.0625rem solid grey;
+                            border-radius: 10%;
+                        }
+
+                        button {
+                            border: 2px solid rgb(76, 75, 75);
+                            width: 1.25rem;
+                            height: 1.25rem;
+                            border-radius: 50%;
+                            position: relative;
+                            top: 2rem;
+
+                            &::before {
+                                content: url(../asset/img/proximo.png);
+                                position: absolute;
+                                top: 0;
+                                left: 0.0625rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .productos{
+        div{
+            img{
+                height: 19.875rem;
+            }
+        }
+    }
+}

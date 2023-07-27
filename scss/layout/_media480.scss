@@ -54,4 +54,16 @@
     .sweaters{
         grid-area: sweaters;
     }
+    /*main PRODUCTOS*/
+    .fil-ord{
+        flex-direction: row-reverse;
+        margin-bottom: 1.25rem;
+    }
+    .productos{
+        div{
+            img{
+                height: 21.875rem;
+            }
+        }
+    }
 }
