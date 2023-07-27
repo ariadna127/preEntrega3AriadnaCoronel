@@ -464,6 +464,7 @@ footer div img {
   }
   .filtros div:nth-child(3) form {
     display: flex;
+    gap: 0.625rem;
   }
   .filtros div:nth-child(3) form div {
     display: flex;
@@ -569,6 +570,26 @@ footer div img {
   .section-2 div {
     width: 100%;
     height: 17.5rem;
+  }
+  /*main PRODUCTOS*/
+  .filtros div:nth-child(3) form div input {
+    width: 3.875rem;
+  }
+  .productos {
+    grid-template-columns: repeat(3, 30%);
+    column-gap: 1.875rem;
+    row-gap: 2.25rem;
+  }
+  .productos div:nth-child(9) {
+    display: block;
+  }
+  .productos div img {
+    height: 17.8125rem;
+  }
+  .productos input {
+    grid-column: 2/3;
+    width: 100%;
+    font-size: 0.75rem;
   }
   /*FOOTER*/
   footer {
