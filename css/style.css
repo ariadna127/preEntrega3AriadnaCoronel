@@ -40,6 +40,7 @@ header {
   grid-area: search;
   width: 100%;
   position: relative;
+  /*bottom: 25%;*/
 }
 .header-div .search form input {
   width: 100%;
@@ -288,7 +289,7 @@ header {
 footer {
   background-color: black;
   color: white;
-  height: 28.75rem;
+  height: 31.875rem;
   display: flex;
   flex-direction: column;
   padding-left: 1.25rem;
@@ -297,9 +298,11 @@ footer {
 footer div h3 {
   font-size: 1rem;
   margin: 0.625rem 0rem 0.625rem 0rem;
+  font-weight: bolder;
 }
 footer div ul {
   list-style: none;
+  padding-left: 0;
 }
 footer div ul li {
   margin-bottom: 0.625rem;
@@ -413,7 +416,6 @@ footer div img {
     height: 21.875rem;
   }
 }
-/*@import "./layout/media600px";*/
 @media (min-width: 768px) {
   /*HEADER*/
   header {
@@ -454,6 +456,7 @@ footer div img {
   }
   .header-nav {
     padding-top: 0;
+    height: 3.75rem;
   }
   .header-nav input,
   .header-nav label {
@@ -465,6 +468,7 @@ footer div img {
     height: 3.75rem;
     position: static;
     width: 100%;
+    padding-left: 0;
   }
   /*main INDEX*/
   .section-1 div img {
@@ -610,6 +614,7 @@ footer div img {
   }
   .header-div h1 {
     width: 16.25rem;
+    margin-bottom: 0.1875rem;
   }
   .header-div .usuario-carrito {
     width: 16.25rem;

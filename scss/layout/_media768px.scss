@@ -48,6 +48,7 @@
 
     .header-nav {
         padding-top: 0;
+        height: 3.75rem;
 
         input,
         label {
@@ -60,6 +61,7 @@
             height: 3.75rem;
             position: static;
             width: 100%;
+            padding-left: 0;
         }
     }
 
