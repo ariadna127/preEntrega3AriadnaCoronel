@@ -2,12 +2,13 @@
 
     /*HEADER*/
     .header-div {
-        .search {
+        .buscar {
             width: 16.25rem;
-            height: 3.125rem;
+            height: 4.875rem;
+            /*height: 3.125rem;*/
 
             form {
-                input {
+                .input-buscar {
                     width: 16.25rem;
                     height: 2.5rem;
                 }
@@ -15,7 +16,7 @@
 
             img {
                 left: 95%;
-                top: 20%;
+                top: 45%;
             }
         }
 

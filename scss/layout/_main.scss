@@ -1,11 +1,13 @@
-.container {
+.contenedor {
     @include flex(column, nowrap, center, center);
-    gap: .9375rem;
-    margin: 15px 0;
+    gap: .625rem;
+    margin-top: 15px;
 
     .div-inicio {
         display: flex;
-
+        p{
+            margin-bottom: 0;
+        }
         p:nth-child(1) {
             color: gray;
         }
@@ -25,6 +27,7 @@
             text-align: center;
             font-size: 1.875rem;
             font-weight: 600;
+            color: black;
         }
     }
 }

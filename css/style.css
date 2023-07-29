@@ -36,13 +36,19 @@ header {
   grid-template-areas: "h1 icono" "search search";
   height: 8.125rem;
 }
-.header-div .search {
+.header-div .buscar {
   grid-area: search;
   width: 100%;
   position: relative;
-  /*bottom: 25%;*/
+  bottom: 50%;
 }
-.header-div .search form input {
+.header-div .buscar form {
+  height: 2.5rem;
+}
+.header-div .buscar form label {
+  height: 1.1875rem;
+}
+.header-div .buscar form .input-buscar {
   width: 100%;
   border: solid 0.0625rem white;
   background-color: black;
@@ -52,11 +58,11 @@ header {
   font-family: "venecia";
   padding: 0.625rem;
 }
-.header-div .search img {
+.header-div .buscar img {
   width: 1.25rem;
   height: 1.25rem;
   position: absolute;
-  top: 15%;
+  top: 62%;
   left: 90%;
 }
 .header-div h1 {
@@ -79,6 +85,7 @@ header {
 }
 
 .header-nav {
+  display: block;
   padding-top: 1.125rem;
 }
 .header-nav input {
@@ -185,34 +192,38 @@ header {
   background-position: center;
 }
 
-.container {
+.contenedor {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  gap: 0.9375rem;
-  margin: 15px 0;
+  gap: 0.625rem;
+  margin-top: 15px;
 }
-.container .div-inicio {
+.contenedor .div-inicio {
   display: flex;
 }
-.container .div-inicio p:nth-child(1) {
+.contenedor .div-inicio p {
+  margin-bottom: 0;
+}
+.contenedor .div-inicio p:nth-child(1) {
   color: gray;
 }
-.container .cat-linea {
+.contenedor .cat-linea {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
   width: 100%;
 }
-.container .cat-linea div {
+.contenedor .cat-linea div {
   border-top: 0.0625rem solid grey;
   margin-top: 0.9375rem;
 }
-.container .cat-linea h2 {
+.contenedor .cat-linea h2 {
   text-align: center;
   font-size: 1.875rem;
   font-weight: 600;
+  color: black;
 }
 
 .fil-ord {
@@ -276,6 +287,7 @@ header {
 }
 .productos div div p {
   text-align: center;
+  margin-bottom: 0;
 }
 .productos input {
   width: 80%;
@@ -284,6 +296,54 @@ header {
   color: white;
   height: 2.8125rem;
   border-radius: 0.625rem;
+}
+
+.contacto div h3 {
+  font-size: 1.17rem;
+  font-weight: bolder;
+  color: black;
+}
+.contacto div ul {
+  list-style: none;
+  padding: 0;
+}
+.contacto div ul li {
+  margin-bottom: 0.625rem;
+}
+.contacto div ul li a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.9;
+}
+.contacto div ul li a img {
+  height: 1.125rem;
+  width: 1.125rem;
+  margin-right: 0.3125rem;
+}
+.contacto form div input {
+  border: solid 1px grey;
+}
+.contacto form div:nth-child(4) input {
+  height: 6.25rem;
+}
+.contacto form button {
+  width: 100%;
+}
+
+.como-comprar form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  border-radius: 0.3125rem;
+}
+.como-comprar form h3 {
+  color: red;
+}
+.como-comprar form input {
+  margin-bottom: 1.25rem;
+  border: 1px solid grey;
+  border-radius: 0.3125rem;
+  color: white;
 }
 
 footer {
@@ -365,7 +425,7 @@ footer div img {
   .header-div h1 {
     font-size: 4rem;
   }
-  .header-div .search img {
+  .header-div .buscar img {
     left: 94%;
   }
   /*main INDEX*/
@@ -433,16 +493,18 @@ footer div img {
     border-bottom: solid 0.0625rem white;
     gap: 0;
   }
-  .header-div .search {
+  .header-div .buscar {
     width: 15.625rem;
     padding-bottom: 0.625rem;
+    bottom: 0;
   }
-  .header-div .search form input {
+  .header-div .buscar form .input-buscar {
     width: 12.5rem;
     margin-left: 0.625rem;
   }
-  .header-div .search img {
+  .header-div .buscar img {
     left: 75%;
+    top: 15%;
   }
   .header-div h1 {
     width: 15.625rem;
@@ -517,9 +579,15 @@ footer div img {
     flex-direction: column;
     gap: 0.625rem;
   }
+  .filtros div h3 {
+    font-size: 1.125rem;
+    font-weight: bolder;
+    color: black;
+  }
   .filtros div ul {
     list-style: none;
     opacity: 0.8;
+    padding-left: 0;
   }
   .filtros div ul li {
     padding-bottom: 0.625rem;
@@ -590,6 +658,16 @@ footer div img {
     width: 100%;
     font-size: 0.75rem;
   }
+  /*main CONTACTO*/
+  .contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  /*main COMO COMPRAR*/
+  .como-comprar form {
+    width: 37.5rem;
+    justify-content: center;
+  }
   /*FOOTER*/
   footer {
     flex-direction: row;
@@ -600,17 +678,18 @@ footer div img {
 }
 @media (min-width: 1024px) {
   /*HEADER*/
-  .header-div .search {
+  .header-div .buscar {
     width: 16.25rem;
-    height: 3.125rem;
+    height: 4.875rem;
+    /*height: 3.125rem;*/
   }
-  .header-div .search form input {
+  .header-div .buscar form .input-buscar {
     width: 16.25rem;
     height: 2.5rem;
   }
-  .header-div .search img {
+  .header-div .buscar img {
     left: 95%;
-    top: 20%;
+    top: 45%;
   }
   .header-div h1 {
     width: 16.25rem;

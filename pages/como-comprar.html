@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cómo comprar</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
     <header>
         <div class="header-div">
-            <div class="search">
+            <div class="buscar">
                 <form action="">
                     <label for=""></label>
-                    <input type="search" id="" placeholder="¿Qué estás buscando?">
+                    <input type="search" id="" placeholder="¿Qué estás buscando?" class="input-buscar">
                 </form>
                 <img src="../asset/img/buscar.png" alt="">
             </div>
@@ -26,7 +29,7 @@
         <nav class="header-nav">
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
-                <i class="menu-icon"><img src="../asset/img/menu.png" alt=""></i>
+                <i class="menu-icon"><img src="../asset/img/menuu.png" alt=""></i>
             </label>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
@@ -38,10 +41,10 @@
         </nav>
     </header>
     <main class="main-como-comprar">
-        <div class="container">
+        <div class="contenedor">
             <div class="div-inicio">
                 <p class="p1">Inicio ></p>
-                <p>Cómo comprar</p> 
+                <p>Cómo comprar</p>
             </div>
             <div class="cat-linea">
                 <div class="a"></div>
@@ -49,24 +52,28 @@
                 <div class="b"></div>
             </div>
         </div>
-        
-        <section class="como-comprar">
-            <p>Para comprar segui los siguientes pasos:</p>
-            <ol>
-                <li>Seleccioná las prendas que quieras, indicando color y talle. Agregalas al carrito.</li>
-                <li>Una vez seleccionados los productos, entrá a tu carrito y hacé click en iniciar compra.</li>
-                <li>Chequeá que tu pedido esté correcto y completa todos lo datos para recibir la información y pedido.</li>
-                <li>Luego seleccioná el modo de envío.</li>
-                <li>Por último elegí el método de pago. Estarás recibiendo todo a tu mail.</li>
-            </ol>
+
+        <section class="como-comprar m-4">
+            <div class="mb-5">
+                <p>Para comprar segui los siguientes pasos:</p>
+                <ol>
+                    <li>Seleccioná las prendas que quieras, indicando color y talle. Agregalas al carrito.</li>
+                    <li>Una vez seleccionados los productos, entrá a tu carrito y hacé click en iniciar compra.</li>
+                    <li>Chequeá que tu pedido esté correcto y completa todos lo datos para recibir la información y
+                        pedido.</li>
+                    <li>Luego seleccioná el modo de envío.</li>
+                    <li>Por último elegí el método de pago. Estarás recibiendo todo a tu mail.</li>
+                </ol>
+            </div>
+
+            <form action="" class="form-como-comprar p-3">
+                <h3 class="fs-3">OBTENÉ UN 15% OFF</h3>
+                <p>¡Suscribite a nuestro newsletter y recibí ofertas exclusivas!</p>
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="CUMPLEAÑ0S (DD/MM)">
+                <input type="submit" value="ENVIAR" class="enviar bg-black">
+            </form>
         </section>
-        <form action="" class="form-como-comprar">
-            <h3>OBTENÉ UN 15% OFF</h3>
-            <p>¡Suscribite a nuestro newsletter y recibí ofertas exclusivas!</p>
-            <input type="email" placeholder="Email">
-            <input type="text" placeholder="CUMPLEAÑ0S (DD/MM)">
-            <input type="submit" value="ENVIAR" class="enviar">
-        </form>
     </main>
     <footer>
         <div class="footer-div">
@@ -83,8 +90,10 @@
             <h3>CONTÁCTANOS</h3>
             <ul>
                 <li><a href=><img src="../asset/img/correo-electronico.png" alt="">venecia.clothes@gmail.com</a></li>
-                <li><a href="https://api.whatsapp.com/send/?phone=5493813348333"><img src="../asset/img/whatsapp.png" alt="">+54 9 3813348333</a></li>
-                <li><a href="https://maps.app.goo.gl/8tq4q85JycDmA44f7"><img src="../asset/img/ubicacion.png" alt="">Ing. La Florida - Calle Ortiz 345</a></li>
+                <li><a href="https://api.whatsapp.com/send/?phone=5493813348333"><img src="../asset/img/whatsapp.png"
+                            alt="">+54 9 3813348333</a></li>
+                <li><a href="https://maps.app.goo.gl/8tq4q85JycDmA44f7"><img src="../asset/img/ubicacion.png"
+                            alt="">Ing. La Florida - Calle Ortiz 345</a></li>
             </ul>
         </div>
         <div class="footer-div">
@@ -93,7 +102,12 @@
             <img src="../asset/img/instagram.png" alt="">
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

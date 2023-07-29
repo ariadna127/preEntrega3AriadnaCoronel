@@ -17,12 +17,13 @@
         border-bottom: solid .0625rem white;
         gap: 0;
 
-        .search {
+        .buscar {
             width: 15.625rem;
             padding-bottom: .625rem;
+            bottom: 0;
 
             form {
-                input {
+                .input-buscar {
                     width: 12.5rem;
                     margin-left: .625rem;
                 }
@@ -30,6 +31,7 @@
 
             img {
                 left: 75%;
+                top: 15%;
             }
         }
 
@@ -126,10 +128,15 @@
             display: flex;
             flex-direction: column;
             gap: .625rem;
-
+            h3{
+                font-size: 1.125rem;
+                font-weight: bolder;
+                color: black;
+            }
             ul {
                 list-style: none;
                 opacity: 0.8;
+                padding-left: 0;
 
                 li {
                     padding-bottom: .625rem;
@@ -222,6 +229,18 @@
         grid-column: 2/3;
         width: 100%;
         font-size: .75rem;
+    }
+}
+/*main CONTACTO*/
+.contacto{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+/*main COMO COMPRAR*/
+.como-comprar{
+    form{
+        width: 37.5rem;
+        justify-content: center
     }
 }
 
