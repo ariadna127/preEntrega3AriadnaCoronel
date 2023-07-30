@@ -79,4 +79,33 @@
             }
         }
     }
+    /*main COMO COMPRAR*/
+    .como-comprar{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        div{
+            margin-right: 1.875rem;
+        }
+        form{
+            width: 100%;
+        }
+    }
+    /*main GIFT CARD*/
+    .gift-card{
+        row-gap: 1.875rem;
+        .div-gift-card{
+            .gift-1{
+                width: 18.75rem;
+                height: 18.75rem;
+                div{
+                    p{
+                        font-size: 1.875rem;
+                        &:nth-child(1){
+                            font-size: 3.75rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

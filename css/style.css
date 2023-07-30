@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -346,6 +347,58 @@ header {
   color: white;
 }
 
+.ordenar-por p {
+  display: none;
+}
+.ordenar-por form select {
+  width: 16.25rem;
+  height: 2.5rem;
+  font-family: "abz";
+  font-size: 1rem;
+  border-color: black;
+  border-radius: 0.3125rem;
+}
+
+.gift-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.875rem 0;
+  gap: 1.5625rem;
+}
+.gift-card .div-gift-card .gift-1 {
+  width: 15.625rem;
+  height: 15.625rem;
+  background-image: url(../asset/img/otoño.jpg);
+  background-size: 28rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gift-card .div-gift-card .gift-1 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 13.75rem;
+  width: 13.75rem;
+  border-bottom: 3px solid;
+  border-top: 3px solid;
+  color: #450f04;
+}
+.gift-card .div-gift-card .gift-1 div p {
+  font-family: "venecia";
+  font-size: 1.4375rem;
+  text-align: center;
+}
+.gift-card .div-gift-card .gift-1 div p:nth-child(1) {
+  font-size: 2.8125rem;
+  font-weight: bolder;
+}
+.gift-card .div-gift-card .gift-2 p {
+  margin-bottom: 0;
+}
+
 footer {
   background-color: black;
   color: white;
@@ -474,6 +527,19 @@ footer div img {
   }
   .productos div img {
     height: 21.875rem;
+  }
+  /*main GIFT CARD*/
+  .gift-card {
+    display: grid;
+    grid-template-columns: 43% 43%;
+    justify-content: center;
+  }
+  .gift-card .div-gift-card {
+    justify-self: center;
+  }
+  .gift-card .div-gift-card .gift-1 {
+    width: 13.6875rem;
+    height: 13.6875rem;
   }
 }
 @media (min-width: 768px) {
@@ -668,6 +734,12 @@ footer div img {
     width: 37.5rem;
     justify-content: center;
   }
+  /*main GIFT CARD*/
+  .gift-card {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    gap: 0;
+  }
   /*FOOTER*/
   footer {
     flex-direction: row;
@@ -737,6 +809,31 @@ footer div img {
   .productos div img {
     height: 21.875rem;
   }
+  /*main COMO COMPRAR*/
+  .como-comprar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .como-comprar div {
+    margin-right: 1.875rem;
+  }
+  .como-comprar form {
+    width: 100%;
+  }
+  /*main GIFT CARD*/
+  .gift-card {
+    row-gap: 1.875rem;
+  }
+  .gift-card .div-gift-card .gift-1 {
+    width: 18.75rem;
+    height: 18.75rem;
+  }
+  .gift-card .div-gift-card .gift-1 div p {
+    font-size: 1.875rem;
+  }
+  .gift-card .div-gift-card .gift-1 div p:nth-child(1) {
+    font-size: 3.75rem;
+  }
 }
 @media (min-width: 1320px) {
   /*main INICIO*/
@@ -769,6 +866,14 @@ footer div img {
   }
   .productos div img {
     height: 25rem;
+  }
+  .gift-card .div-gift-card .gift-1 {
+    height: 21.25rem;
+    width: 21.25rem;
+  }
+  .gift-card .div-gift-card .gift-1 div {
+    width: 17.5rem;
+    height: 17.5rem;
   }
 }
 

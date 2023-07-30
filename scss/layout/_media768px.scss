@@ -243,6 +243,12 @@ grid-template-columns: 1fr 1fr;
         justify-content: center
     }
 }
+/*main GIFT CARD*/
+.gift-card{
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    gap: 0;
+}
 
 /*FOOTER*/
 footer {

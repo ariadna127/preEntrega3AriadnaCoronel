@@ -67,5 +67,17 @@
             }
         }
     }
-    
+    /*main GIFT CARD*/
+    .gift-card{
+        display: grid;
+        grid-template-columns: 43% 43%;
+        justify-content: center;
+        .div-gift-card{
+            justify-self: center;
+            .gift-1{
+                width: 13.6875rem;
+                height: 13.6875rem;
+            }
+        }
+    }
 }
