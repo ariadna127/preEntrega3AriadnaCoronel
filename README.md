@@ -4,7 +4,7 @@
 ¡Bienvenidos a Venecia Clothes! Tienda online especializada en ropa para mujer. Aquí encontrarás lo mejor en moda, con opciones para todos los gustos y estilos. Compra online de manera rápida y fácil, con descuentos especiales. 
 ## Imagen del sitio 
 
-![](https://i.postimg.cc/Bn6cv9g6/venecia-captura.png) ![]
+![](https://i.postimg.cc/Bn6cv9g6/venecia-captura.png)
 
 ## Navegación
 En este repositorio encontrás los siguientes html:
