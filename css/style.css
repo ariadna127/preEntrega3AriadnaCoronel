@@ -245,7 +245,7 @@ header {
   border-color: black;
   border-radius: 0.3125rem;
 }
-.fil-ord .form select {
+.fil-ord form select {
   height: 2.5rem;
   font-family: "abz";
   font-size: 1rem;
