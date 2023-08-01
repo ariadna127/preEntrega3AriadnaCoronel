@@ -1,27 +1,28 @@
-#Venecia Clothes - README
-##Introduccion
-¡Bienvenidos a Venecia Clothes! Tienda online especializada en ropa para mujer. Aquí encontrarás lo mejor en moda, con opciones para todos los gustos y estilos. Compra online de manera rápida y fácil, con descuentos especiales. 
-##Imagen del sitio 
+# Venecia Clothes - README
 
-##Navegación
+## Introduccion
+¡Bienvenidos a Venecia Clothes! Tienda online especializada en ropa para mujer. Aquí encontrarás lo mejor en moda, con opciones para todos los gustos y estilos. Compra online de manera rápida y fácil, con descuentos especiales. 
+## Imagen del sitio 
+./asset/img/venecia-captura.png
+## Navegación
 En este repositorio encontrás los siguientes html:
 
 - ### Inicio
 En nuestra página de inicio encontrarás la colección de Otoño/Invierno 2023. Aquí te mostramos algunas imágenes de nuestras prendas destacadas.
 
--  ###Productos
+- ### Productos
 En la sección de Productos, encontrarás una variedad de opciones para elegir. Puedes filtrar los productos por categoría, talla y precio para encontrar exactamente lo que estás buscando.
 
-- ###Contacto
+- ### Contacto
 En la sección de contacto encontraras los datos de contacto tales como la ubicación de nuestro local, nuestro numero de telefono y mail.
 
-- ###¿Como comprar?
+- ### ¿Como comprar?
 Aquí puedes encontrar los pasos a seguir para realizar una compra.
 
-- ###Gift Card
+- ### Gift Card
 En esta sección ofrecemos diferentes gift cards.
 
-##Tecnologias utilizadas
+## Tecnologias utilizadas
 - HTML
 - CSS
 - Bootstrap
