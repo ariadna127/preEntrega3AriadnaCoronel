@@ -672,11 +672,18 @@ footer div img {
   }
   .filtros div ul {
     list-style: none;
-    opacity: 0.8;
     padding-left: 0;
   }
   .filtros div ul li {
     padding-bottom: 0.625rem;
+    opacity: 0.8;
+  }
+  .filtros div ul li:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  .filtros div:nth-child(2) form {
+    cursor: pointer;
   }
   .filtros div:nth-child(2) form div {
     display: flex;
@@ -694,6 +701,9 @@ footer div img {
   }
   .filtros div:nth-child(2) form div label {
     opacity: 0.8;
+  }
+  .filtros div:nth-child(2) form div label:hover {
+    opacity: 1;
   }
   .filtros div:nth-child(3) form {
     display: flex;
@@ -732,6 +742,12 @@ footer div img {
     grid-template-columns: repeat(3, 11.5rem);
     row-gap: 2.25rem;
     justify-content: start;
+  }
+  .productos div {
+    transition: 0.3s;
+  }
+  .productos div:hover {
+    box-shadow: 7px 7px 10px #555;
   }
   .productos div:nth-child(9) {
     display: block;

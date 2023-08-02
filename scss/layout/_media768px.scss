@@ -141,16 +141,22 @@
 
             ul {
                 list-style: none;
-                opacity: 0.8;
+
                 padding-left: 0;
 
                 li {
                     padding-bottom: .625rem;
+                    opacity: 0.8;
+                    &:hover{
+                        opacity: 1;
+                        cursor: pointer;
+                    }
                 }
             }
 
             &:nth-child(2) {
                 form {
+                    cursor: pointer;
                     div {
                         display: flex;
                         flex-direction: row;
@@ -168,6 +174,9 @@
 
                         label {
                             opacity: 0.8;
+                            &:hover{
+                                opacity: 1;
+                            }
                         }
                     }
                 }
@@ -222,6 +231,10 @@
         justify-content: start;
 
         div {
+            transition: 0.3s;
+            &:hover{
+                box-shadow: 7px 7px 10px #555;
+            }
             &:nth-child(9) {
                 display: block;
             }
