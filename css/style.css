@@ -41,7 +41,7 @@ header {
   grid-area: search;
   width: 100%;
   position: relative;
-  bottom: 50%;
+  bottom: 40%;
 }
 .header-div .buscar form {
   height: 2.5rem;
@@ -66,12 +66,16 @@ header {
   top: 62%;
   left: 90%;
 }
-.header-div h1 {
+.header-div a {
+  text-decoration: none;
+  color: white;
   grid-area: h1;
-  font-family: "venecia";
-  font-size: 3.125rem;
-  font-weight: lighter;
   height: 3.375rem;
+}
+.header-div a h1 {
+  font-size: 3.125rem;
+  font-family: "venecia";
+  font-weight: lighter;
 }
 .header-div .usuario-carrito {
   height: 3.375rem;
@@ -115,6 +119,20 @@ header {
 .header-nav ul li a {
   text-decoration: none;
   color: white;
+  position: relative;
+  padding: 0 5px;
+}
+.header-nav ul li a::after {
+  position: absolute;
+  border-top: 2px solid white;
+  width: 0;
+  content: "";
+  left: 0;
+  bottom: -0.625rem;
+  transition: 0.3s;
+}
+.header-nav ul li a:hover::after {
+  width: 100%;
 }
 
 .section-1 {
@@ -475,7 +493,7 @@ footer div img {
 }
 @media (min-width: 480px) {
   /*HEADER*/
-  .header-div h1 {
+  .header-div a h1 {
     font-size: 4rem;
   }
   .header-div .buscar img {
@@ -572,9 +590,11 @@ footer div img {
     left: 75%;
     top: 15%;
   }
-  .header-div h1 {
+  .header-div a {
     width: 15.625rem;
     height: 4.375rem;
+  }
+  .header-div a h1 {
     text-align: center;
   }
   .header-div .usuario-carrito {

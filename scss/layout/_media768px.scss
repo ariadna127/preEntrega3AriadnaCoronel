@@ -35,10 +35,14 @@
             }
         }
 
-        h1 {
+        a {
             width: 15.625rem;
             height: 4.375rem;
-            text-align: center;
+
+            h1 {
+                text-align: center;
+            }
+
         }
 
         .usuario-carrito {
@@ -128,11 +132,13 @@
             display: flex;
             flex-direction: column;
             gap: .625rem;
-            h3{
+
+            h3 {
                 font-size: 1.125rem;
                 font-weight: bolder;
                 color: black;
             }
+
             ul {
                 list-style: none;
                 opacity: 0.8;
@@ -210,51 +216,54 @@
         }
     }
 
-.productos {
-    grid-template-columns: repeat(3, 11.5rem);
-    row-gap: 2.25rem;
-    justify-content: start;
+    .productos {
+        grid-template-columns: repeat(3, 11.5rem);
+        row-gap: 2.25rem;
+        justify-content: start;
 
-    div {
-        &:nth-child(9) {
-            display: block;
+        div {
+            &:nth-child(9) {
+                display: block;
+            }
+
+            img {
+                height: 16.875rem;
+            }
         }
 
-        img {
-            height: 16.875rem;
+        input {
+            grid-column: 2/3;
+            width: 100%;
+            font-size: .75rem;
         }
     }
 
-    input {
-        grid-column: 2/3;
-        width: 100%;
-        font-size: .75rem;
+    /*main CONTACTO*/
+    .contacto {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
-}
-/*main CONTACTO*/
-.contacto{
-display: grid;
-grid-template-columns: 1fr 1fr;
-}
-/*main COMO COMPRAR*/
-.como-comprar{
-    form{
-        width: 37.5rem;
-        justify-content: center
-    }
-}
-/*main GIFT CARD*/
-.gift-card{
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-around;
-    gap: 0;
-}
 
-/*FOOTER*/
-footer {
-    flex-direction: row;
-    justify-content: space-around;
-    height: 14.375rem;
-    padding-top: 1.25rem;
-}
+    /*main COMO COMPRAR*/
+    .como-comprar {
+        form {
+            width: 37.5rem;
+            justify-content: center
+        }
+    }
+
+    /*main GIFT CARD*/
+    .gift-card {
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-around;
+        gap: 0;
+    }
+
+    /*FOOTER*/
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        height: 14.375rem;
+        padding-top: 1.25rem;
+    }
 }

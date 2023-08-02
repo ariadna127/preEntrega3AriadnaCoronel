@@ -9,78 +9,96 @@ header {
     top: 0;
     z-index: 1;
 }
-.header-div{
+
+.header-div {
     width: 100%;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-areas: "h1 icono" "search search";
     height: 8.125rem;
-    .buscar{
+
+    .buscar {
         grid-area: search;
         width: 100%;
         position: relative;
-        bottom: 50%;
-            form{
-                height: 2.5rem;
-                label{
-                    height: 1.1875rem;
-                }
-                .input-buscar{
-                    width: 100%;
-                    border: solid .0625rem white;
-                    background-color: $background-h-f;
-                    border-radius: .3125rem;
-                    height: 2.25rem;
-                    font-size: 1rem;
-                    font-family: 'venecia';
-                    padding: .625rem;
-                }
+        bottom: 40%;
+
+        form {
+            height: 2.5rem;
+
+            label {
+                height: 1.1875rem;
             }
-            img{
-                width: 1.25rem;
-                height: 1.25rem;
-                position: absolute;
-                top: 62%;
-                left: 90%;
+
+            .input-buscar {
+                width: 100%;
+                border: solid .0625rem white;
+                background-color: $background-h-f;
+                border-radius: .3125rem;
+                height: 2.25rem;
+                font-size: 1rem;
+                font-family: 'venecia';
+                padding: .625rem;
             }
+        }
+
+        img {
+            width: 1.25rem;
+            height: 1.25rem;
+            position: absolute;
+            top: 62%;
+            left: 90%;
+        }
     }
-    h1{
+
+    a {
+        text-decoration: none;
+        color: $color-text-h-f;
         grid-area: h1;
-        font-family: 'venecia';
-        font-size: 3.125rem;
-        font-weight: lighter;
         height: 3.375rem;
+
+        h1 {
+            font-size: 3.125rem;
+            font-family: 'venecia';
+            font-weight: lighter;
+        }
     }
-    .usuario-carrito{
+
+    .usuario-carrito {
         height: 3.375rem;
         padding-top: .8125rem;
         width: 2rem;
         justify-self: end;
         grid-area: icono;
         margin-right: .3125rem;
-        img:nth-child(1){
+
+        img:nth-child(1) {
             display: none;
         }
     }
 }
-.header-nav{
+
+.header-nav {
     display: block;
     padding-top: 1.125rem;
-    input{
+
+    input {
         display: none;
-        &:checked ~ ul{
+
+        &:checked~ul {
             left: 0;
         }
     }
-    label{
-        i{
-            img{
+
+    label {
+        i {
+            img {
                 height: 1.75rem;
             }
         }
     }
-    
-    ul{
+
+    ul {
         list-style: none;
         background-color: $background-h-f;
         display: flex;
@@ -93,10 +111,25 @@ header {
         position: fixed;
         left: -100%;
         top: 0;
-        li{
-            a{
+
+        li {
+            a {
                 text-decoration: none;
                 color: $color-text-h-f;
+                position: relative;
+                padding: 0 5px;
+                &::after{
+                    position: absolute;
+                    border-top: 2px solid $color-text-h-f;
+                    width: 0;
+                    content: '';
+                    left: 0;
+                    bottom: -0.625rem;
+                    transition: 0.3s;
+                }
+                &:hover::after{
+                    width: 100%;
+                }
             }
         }
     }
