@@ -14,6 +14,9 @@
                     text-decoration: none;
                     color: black;
                     opacity: 0.9;
+                    &:hover{
+                        opacity: 1;
+                    }
                     img{
                         height: 1.125rem;
                         width: 1.125rem;

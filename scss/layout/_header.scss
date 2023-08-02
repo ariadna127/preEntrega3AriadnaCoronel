@@ -118,6 +118,9 @@ header {
                 color: $color-text-h-f;
                 position: relative;
                 padding: 0 5px;
+                &:hover{
+                    filter: drop-shadow(1px 1px 15px white);
+                }
                 &::after{
                     position: absolute;
                     border-top: 2px solid $color-text-h-f;

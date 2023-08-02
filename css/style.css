@@ -122,6 +122,9 @@ header {
   position: relative;
   padding: 0 5px;
 }
+.header-nav ul li a:hover {
+  filter: drop-shadow(1px 1px 15px white);
+}
 .header-nav ul li a::after {
   position: absolute;
   border-top: 2px solid white;
@@ -251,6 +254,7 @@ header {
   gap: 0.625rem;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1.25rem;
 }
 .fil-ord div p {
   display: none;
@@ -333,6 +337,9 @@ header {
   text-decoration: none;
   color: black;
   opacity: 0.9;
+}
+.contacto div ul li a:hover {
+  opacity: 1;
 }
 .contacto div ul li a img {
   height: 1.125rem;
@@ -502,6 +509,11 @@ footer div img {
   /*main INDEX*/
   .section-1 {
     height: 30rem;
+    animation-name: animacion-index;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-iteration-count: 1;
+    animation-delay: 3s;
   }
   .section-1 div {
     gap: 1.75rem;
@@ -509,6 +521,15 @@ footer div img {
   .section-1 div img {
     width: 11.625rem;
     height: 15.625rem;
+    transition: 0.3s;
+  }
+  .section-1 div img:hover {
+    transform: scale(1.05);
+  }
+  @keyframes animacion-index {
+    50% {
+      transform: scale(1.04);
+    }
   }
   .section-2 {
     display: grid;
@@ -522,6 +543,11 @@ footer div img {
   .section-2 div {
     width: 100%;
     height: 18rem;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .section-2 div:hover {
+    transform: scale(1.05);
   }
   .section-2 div p {
     font-size: 1.5625rem;
@@ -543,6 +569,13 @@ footer div img {
   .productos {
     grid-template-columns: repeat(2, 14.375rem);
   }
+  .productos div {
+    transition: all 0.3s;
+  }
+  .productos div:hover {
+    box-shadow: 7px 7px 10px #555;
+    transform: scale(1.05);
+  }
   .productos div img {
     height: 21.875rem;
   }
@@ -554,6 +587,14 @@ footer div img {
   }
   .gift-card .div-gift-card {
     justify-self: center;
+    transition: all 0.3s;
+    border-radius: 10px;
+  }
+  .gift-card .div-gift-card:hover {
+    box-shadow: 5px 5px 10px brown;
+  }
+  .gift-card .div-gift-card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
   }
   .gift-card .div-gift-card .gift-1 {
     width: 13.6875rem;
@@ -645,7 +686,7 @@ footer div img {
   }
   .fil-ord div p {
     display: block;
-    align-self: center;
+    padding-top: 0.5rem;
   }
   .fil-ord .filtrar-prod {
     display: none;
@@ -742,12 +783,6 @@ footer div img {
     grid-template-columns: repeat(3, 11.5rem);
     row-gap: 2.25rem;
     justify-content: start;
-  }
-  .productos div {
-    transition: 0.3s;
-  }
-  .productos div:hover {
-    box-shadow: 7px 7px 10px #555;
   }
   .productos div:nth-child(9) {
     display: block;
