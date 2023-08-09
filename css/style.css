@@ -449,6 +449,9 @@ footer div ul li a {
   text-decoration: none;
   color: white;
 }
+footer div ul li a:hover {
+  filter: drop-shadow(1px 1px 15px white);
+}
 footer div ul li a img {
   height: 1.125rem;
   width: 1.125rem;
