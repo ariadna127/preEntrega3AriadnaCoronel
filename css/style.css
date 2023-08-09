@@ -776,7 +776,7 @@ footer div img {
     height: 1.25rem;
     border-radius: 50%;
     position: relative;
-    top: 2rem;
+    top: 2.375rem;
   }
   .filtros div:nth-child(3) form div button::before {
     content: url(../asset/img/proximo.png);
