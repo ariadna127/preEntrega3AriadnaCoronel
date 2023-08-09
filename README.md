@@ -24,6 +24,10 @@ Aquí puedes encontrar los pasos a seguir para realizar una compra.
 - ### Gift Card
 En esta sección ofrecemos diferentes gift cards.
 
+## Profesor y tutor a cargo
+- Maximiliano Cardenas
+- Damián Laterza
+
 ## Tecnologias utilizadas
 - HTML
 - CSS
