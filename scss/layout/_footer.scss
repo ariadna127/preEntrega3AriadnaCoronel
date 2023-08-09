@@ -20,6 +20,7 @@ footer{
                 a{
                     text-decoration: none;
                     color: $color-text-h-f;
+                    transition: all 0.3s;
                     &:hover{
                         filter: drop-shadow(1px 1px 15px white);
                     }

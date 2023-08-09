@@ -121,6 +121,7 @@ header {
   color: white;
   position: relative;
   padding: 0 5px;
+  transition: all 0.3s;
 }
 .header-nav ul li a:hover {
   filter: drop-shadow(1px 1px 15px white);
@@ -448,6 +449,7 @@ footer div ul li {
 footer div ul li a {
   text-decoration: none;
   color: white;
+  transition: all 0.3s;
 }
 footer div ul li a:hover {
   filter: drop-shadow(1px 1px 15px white);
